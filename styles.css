@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+
+}
+body{
+    background-color: black;
+}
+.mainWrap {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+  }
+  
+  .mainWrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(background.jpeg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+  
+  .wrapContent {
+    position: relative;
+    height: 100%;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .textContainer{
+    height: 25%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .infoContainer{
+    height: 10%;
+    width: 100%;
+  }
+  .purpleOne{
+    background-color: #8b37ff;
+  }
+  .purpleTwo{
+    color: #a542ff;
+  }
+  .mainText{
+    font-size: 85px;
+  }
+  .topText{
+    font-size: 26px;
+  }
+  .info{
+    font-size: 24px;
+  }
+  .px-3{
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+  }
+  .infoTwo{
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+li{
+    list-style-type: none;
+}
+
+button{
+    padding: 15px;
+    border-radius: 50vw;
+    border: none;
+}
+@media screen and (max-width: 1080px) {
+    .px-3{
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .mainText{
+        font-size: 45px;
+    }
+    .topText{
+        font-size: 15px;
+    }
+    .info{
+        font-size: 18px;
+    }
+}   
+@media screen and (max-width: 515px){
+    .px-3{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .mainText{
+        font-size: 30px;
+    }
+    .info{
+        font-size: 14px;
+    }
+    .bottomText{
+        font-size: 20px;
+    }
+    footer{
+        display: none;
+    }
+    .infoContainer{
+        height: 8%;
+    }
+    button{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 320px){
+
+    .mainText{
+        font-size: 25px;
+    }
+    .info{
+        font-size: 12px;
+    }
+    .bottomText{
+        font-size: 10px;
+    }
+    .infoTwo{
+        border: none;
+    }
+}
+
